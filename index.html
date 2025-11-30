@@ -20,7 +20,8 @@
 </head>
 <body>
   <h2>성공하는 비즈니스 모델 개발 - 만족도 설문조사</h2>
-  <form>
+  <!-- action에 배포한 웹앱 URL 넣기 -->
+  <form action="https://script.google.com/macros/s/AKfycbxbuRrJJKzbKEYl7ac7CCC9NrkRxJmxg7byEi_fihRKBX68h-zTnMhXPiMJ6ckuB_TOYQ/exec" method="post">
     <!-- 1. 성별 -->
     <div class="question">
       <label>1. 성별을 선택해주세요 (양자택일)</label><br />
@@ -87,19 +88,19 @@
     <!-- 7. 창업 관심도 -->
     <div class="question">
       <label>7. 창업에 대한 관심도를 선택해주세요 (척도형)</label><br />
-      <input type="range" min="1" max="5" /> (1 = 관심 없음, 5 = 매우 관심 있음)
+      <input type="range" min="1" max="5" name="interest" /> (1 = 관심 없음, 5 = 매우 관심 있음)
     </div>
 
     <!-- 8. 졸업 후 창업 의도 -->
     <div class="question">
       <label>8. 졸업 후 창업 의도를 선택해주세요 (척도형)</label><br />
-      <input type="range" min="1" max="5" /> (1 = 전혀 없음, 5 = 매우 있음)
+      <input type="range" min="1" max="5" name="intent" /> (1 = 전혀 없음, 5 = 매우 있음)
     </div>
 
     <!-- 9. 과목 전반 만족도 -->
     <div class="question">
       <label>9. 본 과목에 대한 전반적인 만족도를 선택해주세요 (척도형)</label><br />
-      <input type="range" min="1" max="5" /> (1 = 매우 불만족, 5 = 매우 만족)
+      <input type="range" min="1" max="5" name="satisfaction" /> (1 = 매우 불만족, 5 = 매우 만족)
     </div>
 
     <!-- 10. 개선 의견 -->
